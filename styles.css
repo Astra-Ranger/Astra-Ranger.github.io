@@ -14,10 +14,12 @@
 }
 
 html {
+  color-scheme: light;
   scroll-behavior: smooth;
 }
 
 body {
+  color-scheme: light;
   margin: 0;
   color: var(--ink);
   background: var(--soft);
@@ -129,7 +131,7 @@ h1 {
   margin: 0;
   max-width: 760px;
   color: #0f172a;
-  font-size: clamp(30px, 5vw, 60px);
+  font-size: clamp(24px, 4vw, 48px);
   line-height: 0.98;
   letter-spacing: 0;
 }
@@ -798,7 +800,7 @@ footer {
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 36px;
   }
 
   .education-list div {
