@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume - Sirui Liang</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #eef1f5;
+      color: #1f2933;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 1.36;
+    }
+
+    body {
+      padding: 20px 0;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto;
+      padding: 14mm 16mm 14mm;
+      background: #fff;
+      box-shadow: 0 12px 36px rgba(31, 41, 51, 0.14);
+      overflow: hidden;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 28mm;
+      gap: 16px;
+      align-items: stretch;
+      min-height: 38mm;
+      padding-bottom: 0;
+      border-bottom: 2px solid #0d00b2;
+    }
+
+    .header-main {
+      min-height: 38mm;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .name {
+      margin: 0 0 5px;
+      color: #111827;
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: 0;
+      line-height: 1.05;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 14px;
+      row-gap: 3px;
+      align-self: center;
+      color: #344054;
+      font-size: 10.6px;
+      font-style: normal;
+    }
+
+    .contact span {
+      min-width: 0;
+    }
+
+    .contact a {
+      color: #0000ee;
+      text-decoration: underline;
+    }
+
+    .photo-box {
+      width: 25mm;
+      aspect-ratio: 659 / 899;
+      justify-self: end;
+      align-self: start;
+      display: grid;
+      place-items: center;
+      border: 1px solid #b8c4d6;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .section {
+      margin-top: 7px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 5px;
+      color: #0d00b2;
+      font-size: 13.5px;
+      font-weight: 800;
+    }
+
+    .section-title::after {
+      content: "";
+      flex: 1;
+      border-top: 1px solid #cbd5e1;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .item-title {
+      margin: 0;
+      color: #172033;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .item-subtitle {
+      margin: 1px 0 0;
+      color: #6b7280;
+      font-size: 10px;
+    }
+
+    .item-subtitle a {
+      color: #0000ee;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+
+    .date {
+      color: #5f6c7b;
+      font-size: 10.5px;
+      white-space: nowrap;
+    }
+
+    ul {
+      margin: 4px 0 0;
+      padding-left: 16px;
+    }
+
+    li {
+      margin: 2px 0;
+      padding-left: 1px;
+    }
+
+    .summary-text {
+      margin: 0;
+      color: #344054;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 26mm 1fr;
+      row-gap: 4px;
+      column-gap: 10px;
+    }
+
+    .skill-label {
+      color: #172033;
+      font-weight: 800;
+    }
+
+    .skill-content {
+      color: #344054;
+    }
+
+    .project {
+      margin-bottom: 7px;
+    }
+
+    .note {
+      margin: 1px 0 0;
+      color: #526070;
+      font-size: 10.5px;
+    }
+
+    @media print {
+      html,
+      body {
+        width: 210mm;
+        height: 297mm;
+        background: #fff;
+      }
+
+      body {
+        padding: 0;
+      }
+
+      .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="header-main">
+        <h1 class="name">Sirui Liang</h1>
+        <address class="contact">
+          <span>Email: <a href="mailto:jm_lsr@foxmail.com">jm_lsr@foxmail.com</a></span>
+          <span>Phone: 13631882699</span>
+          <span>University: Great Bay University</span>
+          <span>Major: Artificial Intelligence</span>
+          <span>GitHub: <a href="https://github.com/Astra-Ranger">https://github.com/Astra-Ranger</a></span>
+        </address>
+      </div>
+      <div class="photo-box">
+        <img src="resume_photo.jpeg" alt="Profile photo">
+      </div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="row">
+        <div>
+          <p class="item-title">Great Bay University | Undergraduate Student | Artificial Intelligence</p>
+          <p class="note">GPA: 3.70 / 4.00 (Top 15%)</p>
+        </div>
+        <span class="date">Sep 2025 - Present</span>
+      </div>
+      <p class="item-subtitle">Key Courses: Mathematical Analysis, Linear Algebra, Introduction to Computer Science</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Projects & Competitions</h2>
+
+      <article class="project">
+        <div class="row">
+          <div>
+            <p class="item-title">Virtual Photography System Based on Spatiotemporal Matting and Dynamic Relighting</p>
+            <p class="item-subtitle">Project Lead | Advisor: Xiaodong Cun, Assistant Professor at GBU</p>
+            <p class="item-subtitle">National-level Innovation and Entrepreneurship Training Program for Undergraduates</p>
+            <p class="item-subtitle">Deep Learning / PyTorch / SAM2 / Video Matting / Multi-GPU Training</p>
+          </div>
+          <span class="date">Mar 2026 - Present</span>
+        </div>
+        <ul>
+          <li>Developed a SAM2-driven spatiotemporal matting and dynamic relighting system to address temporal flickering, boundary-detail loss, and lighting inconsistency in virtual photography.</li>
+          <li>Independently reviewed 20+ CCF-A papers, reproduced video matting baselines(MatAnyone), trained VM240K and related data on 8 RTX 4090 GPUs, and explored skip-connection improvements for encoder detail loss.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="row">
+          <div>
+            <p class="item-title">CS101 Copilot (Intelligent Learning Assistant for Introduction to Computer Science)</p>
+            <p class="item-subtitle">Project Lead | RAG Learning Assistant | Flask / ChromaDB / LangChain / JavaScript</p>
+            <p class="item-subtitle">GitHub: <a href="https://github.com/Astra-Ranger/CS101-Copilot">https://github.com/Astra-Ranger/CS101-Copilot</a></p>
+          </div>
+          <span class="date">Apr 2026 - May 2026</span>
+        </div>
+        <ul>
+          <li>Built a course-grounded RAG assistant for CS101, addressing the limitations of general LLMs in accurately answering domain-specific queries.</li>
+          <li>Led 10 core features, including slide browsing, ChromaDB retrieval, page-level citation tracing, SSE streaming status, notebooks, and AI autocomplete.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="row">
+          <div>
+            <p class="item-title">Campus Cafe Ordering Platform</p>
+            <p class="item-subtitle">Independent Project | Full-Stack Development and Server Deployment | FastAPI / SQLite / JavaScript</p>
+          </div>
+          <span class="date">Feb 2026</span>
+        </div>
+        <ul>
+          <li>Built a customer ordering and staff management platform to improve offline ordering efficiency and centralize menu and order operations for a campus cafe.</li>
+          <li>Independently delivered the FastAPI backend, SQLite data layer, frontend pages, permission control, and server deployment; the platform has supported 30+ concurrent ordering users at peak.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="row">
+          <div>
+            <p class="item-title">AI Plan Table for HarmonyOS</p>
+            <p class="item-subtitle">Project Lead | 2026 HarmonyOS Innovation Race(Results Pending) | HarmonyOS / ArkTS / ArkUI</p>
+            <p class="item-subtitle">GitHub: <a href="https://github.com/Astra-Ranger/HarmonyPlanTable">https://github.com/Astra-Ranger/HarmonyPlanTable</a></p>
+          </div>
+          <span class="date">Apr 2026 - May 2026</span>
+        </div>
+        <ul>
+          <li>Designed a HarmonyOS Eisenhower Matrix task planner to address the limitation of ordinary reminder apps that only list events without prioritization or contextual suggestions.</li>
+          <li>Implemented 5 core capabilities, including the ArkTS / ArkUI task board, Preferences persistence, deadline reminders, AI task parsing, and AI recommendations.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div class="skill-label">Programming</div>
+        <div class="skill-content">Proficient in Python (PyTorch, NumPy) and JavaScript; familiar with HTML / CSS development</div>
+
+        <div class="skill-label">Algorithms</div>
+        <div class="skill-content">Familiar with Transformer and ViT architectures; experienced in video matting and instance segmentation; experienced in model training, metric evaluation, and RAG application development</div>
+
+        <div class="skill-label">Engineering</div>
+        <div class="skill-content">Familiar with Linux commands; proficient in Git; able to set up server cluster environments and troubleshoot dependency conflicts, and training configurations</div>
+
+        <div class="skill-label">AI Collaboration</div>
+        <div class="skill-content">Familiar with Vibe Coding workflows; proficient in using Claude Code, Codex, and other AI agents for requirement breakdown, code generation, debugging, and Skill workflow development</div>
+
+        <div class="skill-label">General</div>
+        <div class="skill-content">CET-4(510); able to read English papers and technical documentation; proficient in VS Code, Jupyter Notebook, and Photoshop</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Summary</h2>
+      <p class="summary-text">Artificial Intelligence undergraduate focused on computer vision and LLM application engineering, with experience in video matting experiments, RAG system development, and full-stack project delivery.
+        Capable of literature review, code reproduction, model training, server deployment, and project delivery; accustomed to driving iteration through experiment records and measurable results.</p>
+    </section>
+
+  </main>
+</body>
+</html>
