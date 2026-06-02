@@ -360,9 +360,9 @@ h2 {
   left: var(--timeline-axis);
   top: var(--timeline-dot-y);
   transform: translate(-50%, -50%);
-  width: 13px;
-  height: 13px;
-  border: 3px solid #fff;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
   border-radius: 999px;
   background: var(--accent);
   box-shadow: 0 0 0 1px rgba(13, 0, 178, 0.18);
@@ -422,6 +422,10 @@ h2 {
   gap: 22px;
   align-items: start;
   border-top: 3px solid var(--accent);
+}
+
+.featured-mobile-meta {
+  display: none;
 }
 
 .project-side {
@@ -768,6 +772,15 @@ footer {
   .timeline-item::before {
     left: var(--timeline-axis);
   }
+  .featured-mobile-meta {
+    display: block;
+  }
+
+  .project-card.featured > .project-side > .project-role-row,
+  .project-card.featured > .project-side > .project-meta {
+    display: none;
+  }
+
   .project-grid,
   .about-grid,
   .skill-grid,
